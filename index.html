@@ -4,9 +4,60 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corona tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Covid in Mozambique</title>
 </head>
 
-<body></body>
+<body>
+    <h1 id="title">Covid-19 em Mocambique</h1>
+    <div class="div active-cases">
+        <h2>Casos ativos</h2>
+        <h1 id="active-cases"></h1>
+    </div>
+
+    <div class="div day-info-block cases">
+        <h3>Casos</h3>
+        <div class="sub-div">
+            <div>
+                <span><h4>Total</h4></span><span><h2 id="total-cases"></h2></span>
+            </div>
+            <div>
+                <span><h4>Ultimas 24 horas</h4></span
+          ><span><h2 id="day-cases"></h2></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="div day-info-block deaths">
+        <h3>Mortes</h3>
+        <div class="sub-div">
+            <div>
+                <span><h4>Total</h4></span><span><h2 id="total-deaths"></h2></span>
+            </div>
+            <div>
+                <span><h4>Ultimas 24 horas</h4></span
+          ><span><h2 id="day-deaths"></h2></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="div day-info-block recovered">
+        <h3>Recuperados</h3>
+        <div class="sub-div">
+            <div>
+                <span><h4>Total</h4></span
+          ><span ></span>
+                <h2 id="total-recovered"></h2>
+                </span>
+            </div>
+            <div>
+                <span><h4>Ultimas 24</h4></span
+          ><span><h2 id="day-recovered"></h2></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
 
 </html>
