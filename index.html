@@ -4,59 +4,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Covid em Moçambique</title>
 </head>
 
 <body>
-    <h1 id="title">Covid-19 em Moçambique</h1>
-    <div class="div active-cases">
-        <h2>Casos ativos</h2>
-        <h1 id="active-cases"></h1>
+    <div id="all"></div>
+    <h1 class="text-center mt-3 mb-4">Covid-19 em Moçambique</h1>
+    <div id="conteiner" class="active-cases conteiner text-center my-3 mx-4 border border-primary border-4 rounded-3">
+        <div>
+            <h4>Casos ativos</h4>
+            <h3 id="active-cases"></h3>
+        </div>
     </div>
 
-    <div class="div day-info-block cases">
-        <h3>Casos</h3>
-        <div class="sub-div">
-            <div>
-                <span><h4>Total</h4></span><span><h2 id="total-cases"></h2></span>
+    <div id="conteiner" class="conteiner text-center my-3 mx-4 border border-info border-5 rounded-3">
+        <div class="row pb-2">
+            <h4 class="pt-2">Casos</h4>
+            <div id="info" class="col">
+                <h6>Total</h6>
+                <h4 id="total-cases"></h4>
             </div>
-            <div>
-                <span><h4>Ultimas 24 horas</h4></span
-          ><span><h2 id="day-cases"></h2></span>
+            <div id="info" class="col">
+                <h6>Ultimas 24 horas</h6>
+                <h4 id="day-cases"></h4>
             </div>
         </div>
     </div>
 
-    <div class="div day-info-block deaths">
-        <h3>Óbitos</h3>
-        <div class="sub-div">
-            <div>
-                <span><h4>Total</h4></span><span><h2 id="total-deaths"></h2></span>
+    <div id="conteiner" class="conteiner text-center my-3 mx-4 border border-success border-5 rounded-3">
+        <div class="row pb-2">
+            <h4 class="pt-2">Recuperados</h4>
+            <div id="info" class="col">
+                <h6>Total</h6>
+                <h4 id="total-recovered"></h4>
             </div>
-            <div>
-                <span><h4>Ultimas 24 horas</h4></span
-          ><span><h2 id="day-deaths"></h2></span>
-            </div>
-        </div>
-    </div>
-
-    <div class="div day-info-block recovered">
-        <h3>Recuperados</h3>
-        <div class="sub-div">
-            <div>
-                <span><h4>Total</h4></span
-          ><span ></span>
-                <h2 id="total-recovered"></h2>
-                </span>
-            </div>
-            <div>
-                <span><h4>Ultimas 24 horas</h4></span
-          ><span><h2 id="day-recovered"></h2></span>
+            <div id="info" class="col">
+                <h6>Ultimas 24 horas</h6>
+                <h4 id="day-recovered"></h4>
             </div>
         </div>
     </div>
 
+    <div id="conteiner" class="conteiner text-center my-3 mx-4 border border-danger border-5 rounded-3">
+        <div class="row pb-2">
+            <h4 class="pt-2">Óbitos</h4>
+            <div id="info" class="col">
+                <h6>Total</h6>
+                <h4 id="total-deaths"></h4>
+            </div>
+            <div id="info" class="col">
+                <h6>Ultimas 24 horas</h6>
+                <h4 id="day-deaths"></h4>
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="app.js"></script>
 </body>
 
