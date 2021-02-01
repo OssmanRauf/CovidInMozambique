@@ -9,16 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
     <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
             font-family: "Noto Sans", sans-serif;
             background-color: #fff;
-            height: 100%;
-            width: 100%;
+            min-height: 100%;
         }
         
         #all {
             max-width: 750px;
             margin: auto;
+            height: auto;
         }
         
         h6 {
@@ -37,10 +43,13 @@
         
         footer {
             text-align: center;
-            position: absolute;
+            position: fixed;
             ;
-            width: 100%;
             bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 7px;
             background-color: lightslategrey;
         }
     </style>
